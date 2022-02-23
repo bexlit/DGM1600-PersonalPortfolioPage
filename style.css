@@ -47,12 +47,90 @@
     align-items: center;
     
 }
+ h1 {
+     font-size: 5rem;
+     font-family: 'Poppins', sans-serif;
+     color:rgb(122, 185, 240);
+ }
 
-#projects {
-    background-color: aliceblue;
-
-}
 
 #contacts {
     background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+#contacts h2 {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(110, 168, 219);
+    padding: 2rem;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.contact-links {
+   
+    color: rgb(122, 185, 240);
+    padding: 1.5rem;
+    display: flex;
+}
+
+#contacts a {
+    font-size: 2rem;
+     font-family: 'Poppins', sans-serif;
+    color: rgb(122, 185, 240);
+    padding: 2rem;
+    /* transition: transform 0.3s ease-out; */
+}
+#contacts a:hover {
+    background-color: var(--main-blue);
+    padding: ;
+    transform: translateY(8px);
+}
+#projects h2 {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(110, 168, 219);
+    padding: 2rem;
+}
+#projects  a {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(122, 185, 240);
+    padding: 2rem;
+    
+}
+#projects {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project-tiles a {
+    margin: 2rem;
+}
+
+.project-tile img {
+    width: 20rem
+    
+}
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+  /* 640px / 16px = 40em */
+  @media (max-width: 40em) {
+    html {
+      font-size: 50%;
+    }
+  }
